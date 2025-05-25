@@ -1,0 +1,63 @@
+<html>
+    <head></head>
+    <body>
+        <div class="main">
+            <center>
+                <br><br>
+            <h1>Add Company</h1><br>
+            <form action="companyadd.jsp" method="post">
+                <table>
+                    <tr><td>COMPANY NAME</td><td><input type="text" name="nm1"></td></tr>
+                    <tr><td>COMPANY TAN NUMBER</td><td><input type="text" name="nm2"></td></tr>
+                    <tr><td>YEAR OF ESTABLISHMENT</td><td><input type="text" name="nm3"></td></tr>
+                    <tr><td>CEO</td><td><input type="text" name="nm4"></td></tr>
+                    <tr><td>HEAD OFFICE</td><td><input type="text" name="nm5"></td></tr>
+                    <tr><td>PHONE NUMBER</td><td><input type="text" name="nm6"></td></tr>
+                    <tr><td>EMAIL</td><td><input type="text" name="nm7"></td></tr>
+                    <tr><td>NO OF EMPLOYEES</td><td><input type="text" name="nm8"></td></tr>
+                    <tr><td>NO OF BRANCHES</td><td><input type="text" name="nm9"></td></tr>
+                    <tr><td>ADDRESS</td><td><input type="text" name="nm10"></td></tr>
+                    <tr><td>WEBSITE</td><td><input type="text" name="nm11"></td></tr>
+                    <tr><td>PASSWORD</td><td><input type="text" name="nm12"></td></tr>
+                </table><br><br>
+                <center><button type="submit">Submit</button></center>
+            </form> 
+        </center>
+        </div>
+    </body>
+    <style>
+          body {
+		font-family: Arial, sans-serif;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background: #f4f4f4;
+	}
+    .main {
+		padding: 20px;
+		background:  linear-gradient(#2e31928c,#1BFFFF);
+		border-radius: 5px;
+		box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
+        height: 500px;
+        width: 700px;
+	}
+	
+    td{
+            padding-right: 30px;
+        }
+    
+        button{
+            background: #007bff;
+		    color: white;
+		    border: none;
+		    cursor: pointer;padding: 8px;
+            width: 100px;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: orange;
+            color: black;
+        }
+    </style>
+</html>

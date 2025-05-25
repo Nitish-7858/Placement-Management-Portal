@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #439bf4;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            padding: 40px 0px;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            font-size: 19px;
+        }
+
+        .menu li:hover {
+            background: #addefd;
+        }
+        .menu li a:hover{
+            color: orangered;
+        }
+
+        /* Submenu */
+        .submenu {
+            list-style: none;
+            padding-left: 20px;
+            display: none;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        .submenu li {
+            padding: 8px;
+        }
+
+        .submenu li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .submenu li:hover {
+            background: skyblue;
+        }
+        .submenu li a:hover{
+            color: rgb(209, 43, 43);
+        }
+
+        /* Main Content - Iframe */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            background: #ecf0f1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul class="menu">
+            <li><a href="adminmaindash.html" target="content-frame">Dashboard</a></li>
+            <li>
+                <a href="#">Student Management</a>
+                <ul class="submenu">
+                    <li><a href="addstudent.html" target="content-frame"> Student Add</a></li>
+                    <li><a href="studentupdate.html" target="content-frame">Student Update</a></li>
+                    <li><a href="studelete.html" target="content-frame">Student Delete</a></li>
+                    <li><a href="searchstud.html" target="content-frame"> Student Search</a></li>
+                    <li><a href="studentdashboard.jsp" target="content-frame"> View all Student</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Company Management</a>
+                <ul class="submenu">
+                     <li><a href="companyadd.html" target="content-frame">Add company</a></li>
+            <li><a href="updatecompany.html" target="content-frame">Company update</a></li>
+            <li><a href="compdelete.html" target="content-frame"> Company delete</a></li>
+            <li><a href="searchcompany.html" target="content-frame">search  Company </a></li>
+            <li><a href="companydashboard.jsp" target="content-frame">View all Registered <br> companies</a></li>
+            <li><a href="upcomingcompanyadd.html" target="content-frame">Add Upcoming Companies </a></li>
+            <li><a href="upcompdelete.html" target="content-frame">Delete Upcoming Company details</a></li>
+            <li><a href="upcomingcompanyview.jsp" target="content-frame">Upcoming Companies </a></li>
+                </ul>
+            </li>
+            <li><a href="logout.html" target="content">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <iframe name="content-frame" src="adminmaindash.html"></iframe>
+    </div>
+
+</body>
+</html>

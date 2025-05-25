@@ -1,0 +1,77 @@
+<html>
+    <body>
+        <center><div class="main">
+        <center><h1>WELCOME TO APPLY</h1></center><br>
+        <form action="apply.jsp" method="post">
+            <table>
+                <tr><td>Name</td><td><input type="text" required name="nm1"></td></tr>
+                <tr><td>Age</td><td><input type="text" required name="nm2"></td></tr>
+                <tr><td>Gender</td><td><input type="radio" value="Male" name="nm3">Male <input type="radio" value="Female" name="nm3">Female</td></tr>
+                <tr><td>Course</td>
+                    <td><select required name="nm4" >
+                        <option>B.Tech</option>
+                        <option>Diploma</option>
+                        <option>BCA</option>
+                        <option>BBA</option>
+                        <option>Hotel Management</option>
+                        <option>Law</option>
+                    </select></td></tr>
+                <tr><td>Departmentt</td>
+                        <td><select required name="nm5">
+                            <option>None</option>
+                            <option>Mechanical Engineering</option>
+                            <option>Computer Science Engineering</option>
+                            <option>Civil Engineering</option>
+                            <option>Mining Engineering</option>
+                            <option>Electrical Engineering</option>
+                </select></td></tr>
+                <tr><td>Semester</td>
+                <td><select required name="nm6" >
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                 </select></td></tr>
+                 <tr><td >Skills</td><td><textarea name="nm7" required rows="8"></textarea></td></tr>
+                 <tr><td>Phone Number</td><td><input type="text" required name="nm8"></td></tr>
+                 <tr><td>Email Address</td><td><input type="text" required name="nm9"></td></tr>
+            </table><br><br>
+            <center><button type="submit">Submit</button></center>
+        </form>
+    </div>
+</center>
+    </body>
+    <style>
+        body {
+		font-family: Arial, sans-serif;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background: #f4f4f4;
+	}
+    .main {
+		padding: 20px;
+		background: linear-gradient(#fdb961af,#ff5ace80);
+		border-radius: 5px;
+		box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
+        height: 550px;
+        width: 700px;
+	}
+        td{
+            padding-right: 30px;
+        }
+        button{
+            background: #007bff;
+		    color: white;
+		    border: none;
+		    cursor: pointer;padding: 8px;
+            width: 100px;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: rgb(19, 237, 237);
+            color: black;
+        }
+    </style>
+</html>

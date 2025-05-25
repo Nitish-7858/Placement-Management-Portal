@@ -1,0 +1,81 @@
+<html>
+    <head></head>
+    <body>
+        <div class="main"><center>
+            <center><h1>Student Registration</h1></center>
+            <form action="studentregistration.jsp" method="post">
+                <table>
+                    <tr><td>NAME</td><td><input type="text" required name="nm1"></td></tr>
+                    <tr><td>COURSE</td>
+                    <td><select required name="nm2" >
+                        <option>B.Tech</option>
+                        <option>Diploma</option>
+                        <option>BCA</option>
+                        <option>BBA</option>
+                        <option>Hotel Management</option>
+                        <option>Law</option>
+                    </select></td></tr>
+                    <tr><td>DEPARTMENT</td>
+                    <td><select required name="nm3">
+                        <option>None</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Computer Science Engineering</option>
+                        <option>Civil Engineering</option>
+                        <option>Mining Engineering</option>
+                        <option>Electrical Engineering</option>
+                    </select></td></tr>
+                    <tr><td>SEMESTER</td>
+                    <td><select required name="nm4" >
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select></td></tr>
+                    <tr><td>ENROLLMENT NO.</td><td><input type="text" required name="nm5"></td></tr>
+                    <tr><td>SESSION</td><td><input type="text" required name="nm6"></td></tr>
+                    <tr><td>GENDER</td><td><input type="radio" value="Male"  name="nm7">Male<input type="radio" value="Female"  name="nm7">Female</td></tr>
+                    <tr><td>D.O.B</td><td><input type="date" required name="nm8"></td></tr>
+                    <tr><td>PHONE</td><td><input type="text" required name="nm9"></td></tr>
+                    <tr><td>E-MAIL</td><td><input type="text" required name="nm10"></td></tr>
+                    <tr><td>ADDRESS</td><td><input type="text" required name="nm11"></td></tr>
+                    <tr><td>PASSWORD</td><td><input type="text" required name="nm12"></td></tr>
+                </table><br><br>
+                <center><button type="submit">Submit</button></center>
+            </form> 
+           </center>
+        </div>
+    </body>
+    <style>
+        body {
+		font-family: Arial, sans-serif;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background: #f4f4f4;
+	}
+    .main {
+		padding: 20px;
+		background: linear-gradient(#fdb961af,#ff5ace80);
+		border-radius: 5px;
+		box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
+        height: 450px;
+        width: 700px;
+	}
+        td{
+            padding-right: 30px;
+        }
+        button{
+            background: #007bff;
+		    color: white;
+		    border: none;
+		    cursor: pointer;padding: 8px;
+            width: 100px;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: rgb(19, 237, 237);
+            color: black;
+        }
+    </style>
+</html>
